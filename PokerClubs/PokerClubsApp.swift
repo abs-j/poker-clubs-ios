@@ -1,17 +1,13 @@
-//
-//  PokerClubsApp.swift
-//  PokerClubs
-//
-//  Created by Abhay Jhade on 22/11/2026.
-//
-
 import SwiftUI
 
 @main
 struct PokerClubsApp: App {
+    @State private var appVM = AppViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(appVM)
         }
     }
 }
